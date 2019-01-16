@@ -1,0 +1,11 @@
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\bin\Debug\netcoreapp2.2\list-tutorial.deps.json
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\bin\Debug\netcoreapp2.2\list-tutorial.runtimeconfig.json
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\bin\Debug\netcoreapp2.2\list-tutorial.runtimeconfig.dev.json
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\bin\Debug\netcoreapp2.2\list-tutorial.dll
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\bin\Debug\netcoreapp2.2\list-tutorial.pdb
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\obj\Debug\netcoreapp2.2\list-tutorial.csprojAssemblyReference.cache
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\obj\Debug\netcoreapp2.2\list-tutorial.csproj.CoreCompileInputs.cache
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\obj\Debug\netcoreapp2.2\list-tutorial.AssemblyInfoInputs.cache
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\obj\Debug\netcoreapp2.2\list-tutorial.AssemblyInfo.cs
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\obj\Debug\netcoreapp2.2\list-tutorial.dll
+C:\Users\dmansheim\Documents\GitHub\c#\list-tutorial\obj\Debug\netcoreapp2.2\list-tutorial.pdb
