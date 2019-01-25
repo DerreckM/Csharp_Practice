@@ -1,0 +1,24 @@
+//get key vault previously created in a region, grab it and put in variable 
+$keyVault = Get-AzureRmKeyVault -VaultName "derreckvault" -ResourceGroupName "azkeyvault";
+
+//every keyvault has unique uri
+$diskEncryptionKeyVaultUrl = $keyVault.VaultUri;
+
+//ResourceId has lots of info embedded subscriptions, resource groups, rg name, type, name of key vault 
+$keyVaultResourceId = $keyVault.ResourceId;
+
+//pass key vault info to return key and url
+$keyEncryptionKeyUrl = (Get-AzureKeyVaultKey -VaultName "derreckvault" -Name "azdwmdiskencryption").Key.kid;
+
+//when you run this you get a prompt to continue.  This will reboot the machine in order to enable encryption on VM 
+Set-AzureRmVMDiskEncryptionExtension -ResourceGroupName "azdwmnewvm" `
+    -VMName "anothernew" `
+    -DiskEncryptionKeyVaultUrl $diskEncryptionKeyVaultUrl `
+    -DiskEncryptionKeyVaultId $keyVaultResourceId `
+    -KeyEncryptionKeyUrl $keyEncryptionKeyUrl `
+    -KeyEncryptionKeyVaultId $keyVaultResourceId
+
+
+//Accept the prompt to continue with the VM encryption. The VM restarts during the process. Once the encryption process completes and the VM has rebooted, review the encryption status as follows:
+ 
+Get-AzureRmVmDiskEncryptionStatus  -ResourceGroupName $rgName -VMName "myVM"
