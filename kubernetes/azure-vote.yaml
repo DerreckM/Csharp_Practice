@@ -1,3 +1,12 @@
+//make a azure-vote.yaml file with vim in directory
+//then run the following commands in bash/cli
+//$ az aks get-credentials --resource-group $rg --name $myname
+//$ kubectl get nodes
+//$ kubectl apply -f azure-vote.yaml
+//$ kubectl get service
+//front end will be provisioned with IP address
+//open browser and vote for cat or dog that gets pushed to Redis cache on backend
+
 apiVersion: apps/v1
 kind: Deployment
 metadata:
